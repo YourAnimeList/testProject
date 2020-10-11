@@ -1,0 +1,207 @@
+*, *:before, *:after {
+   padding: 0;
+   margin: 0;
+   border: 0;
+   box-sizing: border-box;
+}
+html, body {
+   height: 100%;
+   font-family: franklin gothic medium;
+}
+.wrapper {
+   height: 100%;
+   overflow: hidden;
+   min-height: 100%;
+}
+
+.page {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.parallax {
+   position: relative;
+   height: 100%;
+}
+.parallax_element {
+   position: fixed;
+   width: 100%;
+   height: 100%;
+   top: 0;
+   left: 0;
+}
+.parallax_element_1{
+   background: url(../img/bg2.jpg) 0 0 / cover no-repeat;
+   background-position: center;
+}
+.parallax_element_2{
+   background: url(../img/right.png) bottom right / 100% no-repeat;
+   z-index: 1;
+}
+.parallax_element_3{
+   background: url(../img/left.png) left bottom / 100% no-repeat;
+   z-index: 1;
+}
+.parallax_fog {
+   background: url(../img/fog_2.png) bottom / 100% no-repeat;
+   position: fixed;
+   height: 100%;
+   width: 170%;
+    left: -25%;
+   bottom: 0%;
+   z-index: 2;
+}
+.parallax_birds {
+   background: url(../img/birds_bg1.png) top / 100% no-repeat;
+   position: fixed;
+    height: 100%;
+    width: 75%;
+    left: 25%;
+    bottom: 0%;
+    z-index: 1;
+}
+.content {
+   position: relative;
+   height: 100%;
+   padding: 200px 100px;
+}
+
+.content_body {
+   max-width: 1170px;
+   margin: 0px auto;
+   min-width: 1000px;
+}
+
+h1 {
+    font-size: 11rem;
+    color: white;
+    text-align: center;
+    line-height: 0.8;
+    margin-bottom: 40px;
+    letter-spacing: 14px;
+}
+h2 {
+   font-size: 7rem;
+   color: white;
+   text-align: center;
+   margin-bottom: 40px;
+}
+p, ul {
+   font-size: 40px;
+   color: white;
+}
+
+.space_block {
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 15%;
+}
+.content_header {
+   padding-bottom: 10rem;
+}
+
+.content_text {
+   padding: 50px;
+    border: 6px solid #FFF;
+    position: relative;
+}
+.first-gif{
+   position: absolute;
+    width: 18rem;
+    top: -280px;
+    left: -6%;
+}
+
+ul {
+   list-style-image: url("../img/li-elem.png");
+   padding: 20px 100px 20px 150px;
+}
+
+li {
+   padding: 10px 0px 10px 15px;
+}
+.step-img-cont {
+   display: flex;
+
+}
+.img-comt {
+   position: relative;
+}
+.seconf-gif {
+   position: absolute;
+}
+
+.stepan{
+   position: relative;
+    z-index: 10;
+}
+.seconf-gif{
+   position: absolute;
+    z-index: 1;
+    top: -221px;
+    left: 40px;
+}
+.poshelaniya {
+   margin-bottom: 200px;
+}
+
+.avatar {
+   width: 114%;
+   bottom: 0;
+   display: block;
+   margin: -50px -50px;
+   filter: brightness(0.8);
+}
+.avatar_block p{
+   margin-bottom: 60px;
+}
+.avatar:hover{
+   filter: invert(1);
+}
+
+.step-img-cont .text-cont{
+   padding: 30% 0%;
+   margin-bottom: 15rem;
+}
+.gachi {
+   white-space: pre;
+    font-size: 25px;
+    margin: auto;
+    line-height: 1.5;
+    margin-left: -50px;
+}
+@media (max-width:1200px) {
+   .content {
+      margin-left: 5%;
+   }
+}
+@media (max-width:900px) {
+   .content {
+      padding-top: 80rem;
+   }
+}
+@media (max-width:600px) {
+   .parallax_element_2 {
+      width: 200%;
+      left: -100%;
+   }
+   .parallax_element_3 {
+      width: 200%;
+   }
+   .parallax_fog {
+      background: url(../img/mob-fog.png) bottom / 100% no-repeat;
+      filter: invert(1);
+   }
+   .parallax_birds {
+      left: 13%;
+    bottom: -44%;
+   }
+   .content {
+      padding-top: 100rem;
+   }
+}
